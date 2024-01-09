@@ -1,3 +1,4 @@
+const express = require('express');
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -17,5 +18,8 @@ class App extends Component {
     );
   }
 }
-
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
+});
 export default App;
